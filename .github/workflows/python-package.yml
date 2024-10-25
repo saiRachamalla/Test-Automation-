@@ -50,7 +50,6 @@ jobs:
     
     - name: Test with pytest
       run: |
-        pytest tests/test_qademoPage2.py --html=../Reports/smoketestingreport.html --self-contained-html --capture=fd --log-cli-level=INFO
-exit_code=$?
+        pytest tests/test_qademoPage2.py
 
 
