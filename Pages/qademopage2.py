@@ -112,7 +112,10 @@ class QaDemo2:
     def fill_user_details_from_excel(self):
 
         logger.info(f"Loading user details from Excel file.")
-        file_path = "C:\\Users\\poornima.r\\Documents\\playwright-tests\\test_data\\userdata.xlsx"
+        file_path = "test_data/userdata.xlsx"  # Using relative path
+
+        file_path = os.path.join("test_data", "userdata.xlsx")
+  
         wb = load_workbook(file_path)
         sheet = wb.active
         for row in sheet.iter_rows(min_row=2, max_row=sheet.max_row, values_only=True):
