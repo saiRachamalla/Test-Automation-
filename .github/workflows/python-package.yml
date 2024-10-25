@@ -28,7 +28,16 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip setuptools wheel
-        python -m pip install playwright pytest pytest-playwright pytest-html pytest-xdist openpyxl
+        python -m pip install playwright
+    
+    - name: Install Playwright Browsers
+      run: |
+        python -m playwright install  # This downloads the browsers needed for Playwright to work
+
+    - name: Install other dependencies
+      run: |
+        python -m pip install pytest pytest-playwright pytest-html pytest-xdist openpyxl
+    
     
     # - name: Install Playwright Browsers
     #   run: |
