@@ -111,6 +111,10 @@ class QaDemo2:
     #------------Add data to the fields from excel sheet----
     def fill_user_details_from_excel(self):
 
+        file_path = "test_data/userdata.xlsx"  # Using relative path
+
+        file_path = os.path.join("test_data", "userdata.xlsx")
+
         logger.info(f"Loading user details from Excel file.")
         file_path = "test_data/userdata.xlsx"  # Using relative path
 
