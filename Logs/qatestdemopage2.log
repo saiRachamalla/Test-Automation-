@@ -1,0 +1,10 @@
+2024-10-24 14:49:45,164 - my_logger - INFO - QaDemo2 class initialized.
+2024-10-24 14:49:45,164 - my_logger - INFO - Opening the demo page.
+2024-10-24 14:50:13,199 - my_logger - INFO - Clicking on the elements and text box.
+2024-10-24 14:50:13,716 - my_logger - INFO - Loading user details from Excel file.
+2024-10-24 14:50:13,743 - my_logger - INFO - Filling form with User Name: Sai, Email: sai@gmail.com, Current Address: hyderabad, Permanent Address: hyderabad
+2024-10-24 14:50:14,919 - my_logger - INFO - Submitting the form.
+2024-10-24 14:50:18,079 - my_logger - INFO - Form submitted successfully.
+2024-10-24 14:50:21,935 - my_logger - INFO - Filling form with User Name: harsha, Email: h@gmail.com, Current Address: vijayawada, Permanent Address: Anantapur
+2024-10-24 14:50:22,535 - my_logger - INFO - Submitting the form.
+2024-10-24 14:50:25,778 - my_logger - INFO - Form submitted successfully.
