@@ -47,6 +47,9 @@ jobs:
     - name: Install reports
       run: |
         py -m pip install pytest-reporter-html1
+    - name: Install openpyxl
+      run: |
+        py -m pip install openpyxl
     
     - name: Test with pytest
       run: |
