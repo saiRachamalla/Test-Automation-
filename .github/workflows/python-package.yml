@@ -28,13 +28,29 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip setuptools wheel
-        python -m pip install pytest pytest-playwright pytest-html
+        python -m pip install playwright
     
     - name: Install Playwright Browsers
       run: |
         python -m playwright install
+    - name: Install pytest-palywright
+      run: |
+        python -m pip install pytest-playwright
+    - name: Install pytest-xdist
+      run: |
+        pip install pytest-xdist
+
+    - name: Install html reports
+      run: |
+        py -m pip install pytest-html
+
+    - name: Install reports
+      run: |
+        py -m pip install pytest-reporter-html1
     
     - name: Test with pytest
       run: |
-        py -m pytest tests/test_qatestdemo2.py --html=reports/report.html
+        pytest tests/tests_QC/tests_QC_Smoketest/ --html=../Reports/smoketestingreport.html --self-contained-html --capture=fd --log-cli-level=INFO
+exit_code=$?
+
 
