@@ -15,7 +15,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        python-version: ["3.9", "3.10", "3.11"]
+        python-version: ["3.10"]
 
     steps:
     - uses: actions/checkout@v4
@@ -28,28 +28,28 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip setuptools wheel
-        python -m pip install playwright
+        python -m pip install playwright pytest pytest-playwright pytest-html pytest-xdist openpyxl
     
-    - name: Install Playwright Browsers
-      run: |
-        python -m playwright install
-    - name: Install pytest-palywright
-      run: |
-        python -m pip install pytest-playwright
-    - name: Install pytest-xdist
-      run: |
-        pip install pytest-xdist
+    # - name: Install Playwright Browsers
+    #   run: |
+    #     python -m playwright install
+    # - name: Install pytest-palywright
+    #   run: |
+    #     python -m pip install pytest-playwright
+    # - name: Install pytest-xdist
+    #   run: |
+    #     pip install pytest-xdist
 
-    - name: Install html reports
-      run: |
-        py -m pip install pytest-html
+    # - name: Install html reports
+    #   run: |
+    #     py -m pip install pytest-html
 
-    - name: Install reports
-      run: |
-        py -m pip install pytest-reporter-html1
-    - name: Install openpyxl
-      run: |
-        py -m pip install openpyxl
+    # - name: Install reports
+    #   run: |
+    #     py -m pip install pytest-reporter-html1
+    # - name: Install openpyxl
+    #   run: |
+    #     py -m pip install openpyxl
 
     - name: List installed packages
       run: |
