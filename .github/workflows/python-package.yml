@@ -31,9 +31,9 @@ jobs:
         python -m pip install playwright
         python -m playwright install
         python -m pip install pytest-playwright
-        python -m pip install pytest-reporter-html
+        python -m pip install pytest-html
     
     - name: Test with pytest
       run: |
-        py -m pytest tests/test_qatestdemo2.py --html=reports/report.html
+        py -m pytest tests/test_qatestdemo2.py
 
