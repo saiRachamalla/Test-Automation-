@@ -1,0 +1,7 @@
+pytest-playwright
+playwright
+openpyxl
+pytest-html
+pytest-reporter-html1
+python-json-logger
+
