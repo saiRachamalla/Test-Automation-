@@ -1,8 +1,8 @@
 name: Python package
 
-on:
-  schedule:
-    - cron: '0 0 * * *'      # Runs daily at midnight
+#on:
+ # schedule:
+  #  - cron: '0 0 * * *'      # Runs daily at midnight
   workflow_dispatch:          # Allows manual triggering of the workflow
   #push:
     #branches: [ "main" ]     # Uncomment to trigger on push to main branch
