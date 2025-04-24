@@ -10,7 +10,7 @@ script_directory = os.path.dirname(os.path.abspath(__file__))
 log_directory = "../Logs"  # Adjusted to go one level up to the "playwright" directory
 
 # Specify the log file name
-log_file_name = "qatestdemopage2.log"
+log_file_name = "qatestdemopage1.log"
 
 # Construct the absolute path for the log file
 log_file_path = os.path.join(script_directory, log_directory, log_file_name)

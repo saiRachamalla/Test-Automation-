@@ -1,0 +1,8 @@
+2024-11-06 15:34:12,692 - my_logger - INFO - QaDemo2 class initialized.
+2024-11-06 15:34:12,692 - my_logger - INFO - Opening the demo page.
+2024-11-06 15:34:22,236 - my_logger - INFO - Clicking on the elements and text box.
+2024-11-06 15:34:22,493 - my_logger - INFO - Loading user details from Excel file.
+2025-04-24 16:59:16,591 - my_logger - INFO - QaDemo2 class initialized.
+2025-04-24 16:59:16,592 - my_logger - INFO - Opening the demo page.
+2025-04-24 16:59:20,513 - my_logger - INFO - Clicking on the elements and text box.
+2025-04-24 16:59:20,741 - my_logger - INFO - Loading user details from Excel file.
